@@ -9,6 +9,51 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
+		"zap-cdk.ActiveScanConfig",
+		reflect.TypeOf((*ActiveScanConfig)(nil)).Elem(),
+		[]_jsii_.Member{
+			_jsii_.MemberProperty{JsiiProperty: "config", GoGetter: "Config"},
+			_jsii_.MemberProperty{JsiiProperty: "node", GoGetter: "Node"},
+			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
+			_jsii_.MemberMethod{JsiiMethod: "toYaml", GoMethod: "ToYaml"},
+		},
+		func() interface{} {
+			j := jsiiProxy_ActiveScanConfig{}
+			_jsii_.InitJsiiProxy(&j.Type__constructsConstruct)
+			return &j
+		},
+	)
+	_jsii_.RegisterClass(
+		"zap-cdk.ActiveScanJob",
+		reflect.TypeOf((*ActiveScanJob)(nil)).Elem(),
+		[]_jsii_.Member{
+			_jsii_.MemberProperty{JsiiProperty: "job", GoGetter: "Job"},
+			_jsii_.MemberProperty{JsiiProperty: "node", GoGetter: "Node"},
+			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
+			_jsii_.MemberMethod{JsiiMethod: "toYaml", GoMethod: "ToYaml"},
+		},
+		func() interface{} {
+			j := jsiiProxy_ActiveScanJob{}
+			_jsii_.InitJsiiProxy(&j.Type__constructsConstruct)
+			return &j
+		},
+	)
+	_jsii_.RegisterClass(
+		"zap-cdk.ActiveScanPolicyConfig",
+		reflect.TypeOf((*ActiveScanPolicyConfig)(nil)).Elem(),
+		[]_jsii_.Member{
+			_jsii_.MemberProperty{JsiiProperty: "config", GoGetter: "Config"},
+			_jsii_.MemberProperty{JsiiProperty: "node", GoGetter: "Node"},
+			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
+			_jsii_.MemberMethod{JsiiMethod: "toYaml", GoMethod: "ToYaml"},
+		},
+		func() interface{} {
+			j := jsiiProxy_ActiveScanPolicyConfig{}
+			_jsii_.InitJsiiProxy(&j.Type__constructsConstruct)
+			return &j
+		},
+	)
+	_jsii_.RegisterClass(
 		"zap-cdk.App",
 		reflect.TypeOf((*App)(nil)).Elem(),
 		[]_jsii_.Member{
@@ -18,6 +63,81 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_App{}
+			_jsii_.InitJsiiProxy(&j.Type__constructsConstruct)
+			return &j
+		},
+	)
+	_jsii_.RegisterClass(
+		"zap-cdk.DelayConfig",
+		reflect.TypeOf((*DelayConfig)(nil)).Elem(),
+		[]_jsii_.Member{
+			_jsii_.MemberProperty{JsiiProperty: "config", GoGetter: "Config"},
+			_jsii_.MemberProperty{JsiiProperty: "node", GoGetter: "Node"},
+			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
+			_jsii_.MemberMethod{JsiiMethod: "toYaml", GoMethod: "ToYaml"},
+		},
+		func() interface{} {
+			j := jsiiProxy_DelayConfig{}
+			_jsii_.InitJsiiProxy(&j.Type__constructsConstruct)
+			return &j
+		},
+	)
+	_jsii_.RegisterClass(
+		"zap-cdk.EnvironmentConfig",
+		reflect.TypeOf((*EnvironmentConfig)(nil)).Elem(),
+		[]_jsii_.Member{
+			_jsii_.MemberProperty{JsiiProperty: "config", GoGetter: "Config"},
+			_jsii_.MemberProperty{JsiiProperty: "node", GoGetter: "Node"},
+			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
+			_jsii_.MemberMethod{JsiiMethod: "toYaml", GoMethod: "ToYaml"},
+		},
+		func() interface{} {
+			j := jsiiProxy_EnvironmentConfig{}
+			_jsii_.InitJsiiProxy(&j.Type__constructsConstruct)
+			return &j
+		},
+	)
+	_jsii_.RegisterClass(
+		"zap-cdk.ExitStatusConfig",
+		reflect.TypeOf((*ExitStatusConfig)(nil)).Elem(),
+		[]_jsii_.Member{
+			_jsii_.MemberProperty{JsiiProperty: "config", GoGetter: "Config"},
+			_jsii_.MemberProperty{JsiiProperty: "node", GoGetter: "Node"},
+			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
+			_jsii_.MemberMethod{JsiiMethod: "toYaml", GoMethod: "ToYaml"},
+		},
+		func() interface{} {
+			j := jsiiProxy_ExitStatusConfig{}
+			_jsii_.InitJsiiProxy(&j.Type__constructsConstruct)
+			return &j
+		},
+	)
+	_jsii_.RegisterClass(
+		"zap-cdk.ExportConfig",
+		reflect.TypeOf((*ExportConfig)(nil)).Elem(),
+		[]_jsii_.Member{
+			_jsii_.MemberProperty{JsiiProperty: "config", GoGetter: "Config"},
+			_jsii_.MemberProperty{JsiiProperty: "node", GoGetter: "Node"},
+			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
+			_jsii_.MemberMethod{JsiiMethod: "toYaml", GoMethod: "ToYaml"},
+		},
+		func() interface{} {
+			j := jsiiProxy_ExportConfig{}
+			_jsii_.InitJsiiProxy(&j.Type__constructsConstruct)
+			return &j
+		},
+	)
+	_jsii_.RegisterClass(
+		"zap-cdk.GraphQLConfig",
+		reflect.TypeOf((*GraphQLConfig)(nil)).Elem(),
+		[]_jsii_.Member{
+			_jsii_.MemberProperty{JsiiProperty: "config", GoGetter: "Config"},
+			_jsii_.MemberProperty{JsiiProperty: "node", GoGetter: "Node"},
+			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
+			_jsii_.MemberMethod{JsiiMethod: "toYaml", GoMethod: "ToYaml"},
+		},
+		func() interface{} {
+			j := jsiiProxy_GraphQLConfig{}
 			_jsii_.InitJsiiProxy(&j.Type__constructsConstruct)
 			return &j
 		},
@@ -65,6 +185,16 @@ func init() {
 		},
 		func() interface{} {
 			return &jsiiProxy_IActiveScanConfigParameters{}
+		},
+	)
+	_jsii_.RegisterInterface(
+		"zap-cdk.IActiveScanConfigProps",
+		reflect.TypeOf((*IActiveScanConfigProps)(nil)).Elem(),
+		[]_jsii_.Member{
+			_jsii_.MemberProperty{JsiiProperty: "activeScanConfig", GoGetter: "ActiveScanConfig"},
+		},
+		func() interface{} {
+			return &jsiiProxy_IActiveScanConfigProps{}
 		},
 	)
 	_jsii_.RegisterInterface(
@@ -137,6 +267,16 @@ func init() {
 		},
 		func() interface{} {
 			return &jsiiProxy_IActiveScanPolicyParameters{}
+		},
+	)
+	_jsii_.RegisterInterface(
+		"zap-cdk.IActiveScanPolicyProps",
+		reflect.TypeOf((*IActiveScanPolicyProps)(nil)).Elem(),
+		[]_jsii_.Member{
+			_jsii_.MemberProperty{JsiiProperty: "activeScanPolicy", GoGetter: "ActiveScanPolicy"},
+		},
+		func() interface{} {
+			return &jsiiProxy_IActiveScanPolicyProps{}
 		},
 	)
 	_jsii_.RegisterInterface(
@@ -367,6 +507,16 @@ func init() {
 		},
 	)
 	_jsii_.RegisterInterface(
+		"zap-cdk.IDelayProps",
+		reflect.TypeOf((*IDelayProps)(nil)).Elem(),
+		[]_jsii_.Member{
+			_jsii_.MemberProperty{JsiiProperty: "delay", GoGetter: "Delay"},
+		},
+		func() interface{} {
+			return &jsiiProxy_IDelayProps{}
+		},
+	)
+	_jsii_.RegisterInterface(
 		"zap-cdk.IEnvironment",
 		reflect.TypeOf((*IEnvironment)(nil)).Elem(),
 		[]_jsii_.Member{
@@ -390,6 +540,16 @@ func init() {
 		},
 		func() interface{} {
 			return &jsiiProxy_IEnvironmentParameters{}
+		},
+	)
+	_jsii_.RegisterInterface(
+		"zap-cdk.IEnvironmentProps",
+		reflect.TypeOf((*IEnvironmentProps)(nil)).Elem(),
+		[]_jsii_.Member{
+			_jsii_.MemberProperty{JsiiProperty: "environment", GoGetter: "Environment"},
+		},
+		func() interface{} {
+			return &jsiiProxy_IEnvironmentProps{}
 		},
 	)
 	_jsii_.RegisterInterface(
@@ -449,6 +609,16 @@ func init() {
 		},
 	)
 	_jsii_.RegisterInterface(
+		"zap-cdk.IExitStatusProps",
+		reflect.TypeOf((*IExitStatusProps)(nil)).Elem(),
+		[]_jsii_.Member{
+			_jsii_.MemberProperty{JsiiProperty: "exitStatus", GoGetter: "ExitStatus"},
+		},
+		func() interface{} {
+			return &jsiiProxy_IExitStatusProps{}
+		},
+	)
+	_jsii_.RegisterInterface(
 		"zap-cdk.IExport",
 		reflect.TypeOf((*IExport)(nil)).Elem(),
 		[]_jsii_.Member{
@@ -459,6 +629,16 @@ func init() {
 		},
 		func() interface{} {
 			return &jsiiProxy_IExport{}
+		},
+	)
+	_jsii_.RegisterInterface(
+		"zap-cdk.IExportProps",
+		reflect.TypeOf((*IExportProps)(nil)).Elem(),
+		[]_jsii_.Member{
+			_jsii_.MemberProperty{JsiiProperty: "export", GoGetter: "Export"},
+		},
+		func() interface{} {
+			return &jsiiProxy_IExportProps{}
 		},
 	)
 	_jsii_.RegisterInterface(
@@ -483,6 +663,16 @@ func init() {
 		},
 	)
 	_jsii_.RegisterInterface(
+		"zap-cdk.IGraphQLProps",
+		reflect.TypeOf((*IGraphQLProps)(nil)).Elem(),
+		[]_jsii_.Member{
+			_jsii_.MemberProperty{JsiiProperty: "graphql", GoGetter: "Graphql"},
+		},
+		func() interface{} {
+			return &jsiiProxy_IGraphQLProps{}
+		},
+	)
+	_jsii_.RegisterInterface(
 		"zap-cdk.IHttpHeaders",
 		reflect.TypeOf((*IHttpHeaders)(nil)).Elem(),
 		[]_jsii_.Member{
@@ -502,6 +692,16 @@ func init() {
 		},
 		func() interface{} {
 			return &jsiiProxy_IImport{}
+		},
+	)
+	_jsii_.RegisterInterface(
+		"zap-cdk.IImportProps",
+		reflect.TypeOf((*IImportProps)(nil)).Elem(),
+		[]_jsii_.Member{
+			_jsii_.MemberProperty{JsiiProperty: "import", GoGetter: "Import"},
+		},
+		func() interface{} {
+			return &jsiiProxy_IImportProps{}
 		},
 	)
 	_jsii_.RegisterInterface(
@@ -570,6 +770,16 @@ func init() {
 		},
 	)
 	_jsii_.RegisterInterface(
+		"zap-cdk.IOpenAPIProps",
+		reflect.TypeOf((*IOpenAPIProps)(nil)).Elem(),
+		[]_jsii_.Member{
+			_jsii_.MemberProperty{JsiiProperty: "openapi", GoGetter: "Openapi"},
+		},
+		func() interface{} {
+			return &jsiiProxy_IOpenAPIProps{}
+		},
+	)
+	_jsii_.RegisterInterface(
 		"zap-cdk.IPassiveScanConfig",
 		reflect.TypeOf((*IPassiveScanConfig)(nil)).Elem(),
 		[]_jsii_.Member{
@@ -581,6 +791,16 @@ func init() {
 		},
 		func() interface{} {
 			return &jsiiProxy_IPassiveScanConfig{}
+		},
+	)
+	_jsii_.RegisterInterface(
+		"zap-cdk.IPassiveScanConfigProps",
+		reflect.TypeOf((*IPassiveScanConfigProps)(nil)).Elem(),
+		[]_jsii_.Member{
+			_jsii_.MemberProperty{JsiiProperty: "passiveScanConfig", GoGetter: "PassiveScanConfig"},
+		},
+		func() interface{} {
+			return &jsiiProxy_IPassiveScanConfigProps{}
 		},
 	)
 	_jsii_.RegisterInterface(
@@ -617,6 +837,16 @@ func init() {
 		},
 		func() interface{} {
 			return &jsiiProxy_IPassiveScanWait{}
+		},
+	)
+	_jsii_.RegisterInterface(
+		"zap-cdk.IPassiveScanWaitProps",
+		reflect.TypeOf((*IPassiveScanWaitProps)(nil)).Elem(),
+		[]_jsii_.Member{
+			_jsii_.MemberProperty{JsiiProperty: "passiveScanWait", GoGetter: "PassiveScanWait"},
+		},
+		func() interface{} {
+			return &jsiiProxy_IPassiveScanWaitProps{}
 		},
 	)
 	_jsii_.RegisterInterface(
@@ -671,6 +901,16 @@ func init() {
 		},
 	)
 	_jsii_.RegisterInterface(
+		"zap-cdk.IPostmanProps",
+		reflect.TypeOf((*IPostmanProps)(nil)).Elem(),
+		[]_jsii_.Member{
+			_jsii_.MemberProperty{JsiiProperty: "postman", GoGetter: "Postman"},
+		},
+		func() interface{} {
+			return &jsiiProxy_IPostmanProps{}
+		},
+	)
+	_jsii_.RegisterInterface(
 		"zap-cdk.IReplacer",
 		reflect.TypeOf((*IReplacer)(nil)).Elem(),
 		[]_jsii_.Member{
@@ -679,6 +919,16 @@ func init() {
 		},
 		func() interface{} {
 			return &jsiiProxy_IReplacer{}
+		},
+	)
+	_jsii_.RegisterInterface(
+		"zap-cdk.IReplacerProps",
+		reflect.TypeOf((*IReplacerProps)(nil)).Elem(),
+		[]_jsii_.Member{
+			_jsii_.MemberProperty{JsiiProperty: "replacer", GoGetter: "Replacer"},
+		},
+		func() interface{} {
+			return &jsiiProxy_IReplacerProps{}
 		},
 	)
 	_jsii_.RegisterInterface(
@@ -719,6 +969,16 @@ func init() {
 		},
 	)
 	_jsii_.RegisterInterface(
+		"zap-cdk.IReportProps",
+		reflect.TypeOf((*IReportProps)(nil)).Elem(),
+		[]_jsii_.Member{
+			_jsii_.MemberProperty{JsiiProperty: "report", GoGetter: "Report"},
+		},
+		func() interface{} {
+			return &jsiiProxy_IReportProps{}
+		},
+	)
+	_jsii_.RegisterInterface(
 		"zap-cdk.IRequest",
 		reflect.TypeOf((*IRequest)(nil)).Elem(),
 		[]_jsii_.Member{
@@ -745,6 +1005,16 @@ func init() {
 		},
 		func() interface{} {
 			return &jsiiProxy_IRequestorParameters{}
+		},
+	)
+	_jsii_.RegisterInterface(
+		"zap-cdk.IRequestorProps",
+		reflect.TypeOf((*IRequestorProps)(nil)).Elem(),
+		[]_jsii_.Member{
+			_jsii_.MemberProperty{JsiiProperty: "requestor", GoGetter: "Requestor"},
+		},
+		func() interface{} {
+			return &jsiiProxy_IRequestorProps{}
 		},
 	)
 	_jsii_.RegisterInterface(
@@ -807,6 +1077,16 @@ func init() {
 		},
 	)
 	_jsii_.RegisterInterface(
+		"zap-cdk.ISoapProps",
+		reflect.TypeOf((*ISoapProps)(nil)).Elem(),
+		[]_jsii_.Member{
+			_jsii_.MemberProperty{JsiiProperty: "soap", GoGetter: "Soap"},
+		},
+		func() interface{} {
+			return &jsiiProxy_ISoapProps{}
+		},
+	)
+	_jsii_.RegisterInterface(
 		"zap-cdk.ISpider",
 		reflect.TypeOf((*ISpider)(nil)).Elem(),
 		[]_jsii_.Member{
@@ -846,6 +1126,16 @@ func init() {
 		},
 		func() interface{} {
 			return &jsiiProxy_ISpiderAjax{}
+		},
+	)
+	_jsii_.RegisterInterface(
+		"zap-cdk.ISpiderAjaxProps",
+		reflect.TypeOf((*ISpiderAjaxProps)(nil)).Elem(),
+		[]_jsii_.Member{
+			_jsii_.MemberProperty{JsiiProperty: "spiderAjax", GoGetter: "SpiderAjax"},
+		},
+		func() interface{} {
+			return &jsiiProxy_ISpiderAjaxProps{}
 		},
 	)
 	_jsii_.RegisterInterface(
@@ -987,8 +1277,189 @@ func init() {
 			return &jsiiProxy_IZap{}
 		},
 	)
+	_jsii_.RegisterClass(
+		"zap-cdk.ImportConfig",
+		reflect.TypeOf((*ImportConfig)(nil)).Elem(),
+		[]_jsii_.Member{
+			_jsii_.MemberProperty{JsiiProperty: "config", GoGetter: "Config"},
+			_jsii_.MemberProperty{JsiiProperty: "node", GoGetter: "Node"},
+			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
+			_jsii_.MemberMethod{JsiiMethod: "toYaml", GoMethod: "ToYaml"},
+		},
+		func() interface{} {
+			j := jsiiProxy_ImportConfig{}
+			_jsii_.InitJsiiProxy(&j.Type__constructsConstruct)
+			return &j
+		},
+	)
+	_jsii_.RegisterClass(
+		"zap-cdk.OpenAPIConfig",
+		reflect.TypeOf((*OpenAPIConfig)(nil)).Elem(),
+		[]_jsii_.Member{
+			_jsii_.MemberProperty{JsiiProperty: "config", GoGetter: "Config"},
+			_jsii_.MemberProperty{JsiiProperty: "node", GoGetter: "Node"},
+			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
+			_jsii_.MemberMethod{JsiiMethod: "toYaml", GoMethod: "ToYaml"},
+		},
+		func() interface{} {
+			j := jsiiProxy_OpenAPIConfig{}
+			_jsii_.InitJsiiProxy(&j.Type__constructsConstruct)
+			return &j
+		},
+	)
+	_jsii_.RegisterClass(
+		"zap-cdk.PassiveScanConfig",
+		reflect.TypeOf((*PassiveScanConfig)(nil)).Elem(),
+		[]_jsii_.Member{
+			_jsii_.MemberProperty{JsiiProperty: "config", GoGetter: "Config"},
+			_jsii_.MemberProperty{JsiiProperty: "node", GoGetter: "Node"},
+			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
+			_jsii_.MemberMethod{JsiiMethod: "toYaml", GoMethod: "ToYaml"},
+		},
+		func() interface{} {
+			j := jsiiProxy_PassiveScanConfig{}
+			_jsii_.InitJsiiProxy(&j.Type__constructsConstruct)
+			return &j
+		},
+	)
+	_jsii_.RegisterClass(
+		"zap-cdk.PassiveScanWaitConfig",
+		reflect.TypeOf((*PassiveScanWaitConfig)(nil)).Elem(),
+		[]_jsii_.Member{
+			_jsii_.MemberProperty{JsiiProperty: "config", GoGetter: "Config"},
+			_jsii_.MemberProperty{JsiiProperty: "node", GoGetter: "Node"},
+			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
+			_jsii_.MemberMethod{JsiiMethod: "toYaml", GoMethod: "ToYaml"},
+		},
+		func() interface{} {
+			j := jsiiProxy_PassiveScanWaitConfig{}
+			_jsii_.InitJsiiProxy(&j.Type__constructsConstruct)
+			return &j
+		},
+	)
+	_jsii_.RegisterClass(
+		"zap-cdk.PostmanConfig",
+		reflect.TypeOf((*PostmanConfig)(nil)).Elem(),
+		[]_jsii_.Member{
+			_jsii_.MemberProperty{JsiiProperty: "config", GoGetter: "Config"},
+			_jsii_.MemberProperty{JsiiProperty: "node", GoGetter: "Node"},
+			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
+			_jsii_.MemberMethod{JsiiMethod: "toYaml", GoMethod: "ToYaml"},
+		},
+		func() interface{} {
+			j := jsiiProxy_PostmanConfig{}
+			_jsii_.InitJsiiProxy(&j.Type__constructsConstruct)
+			return &j
+		},
+	)
+	_jsii_.RegisterClass(
+		"zap-cdk.ReplacerConfig",
+		reflect.TypeOf((*ReplacerConfig)(nil)).Elem(),
+		[]_jsii_.Member{
+			_jsii_.MemberProperty{JsiiProperty: "config", GoGetter: "Config"},
+			_jsii_.MemberProperty{JsiiProperty: "node", GoGetter: "Node"},
+			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
+			_jsii_.MemberMethod{JsiiMethod: "toYaml", GoMethod: "ToYaml"},
+		},
+		func() interface{} {
+			j := jsiiProxy_ReplacerConfig{}
+			_jsii_.InitJsiiProxy(&j.Type__constructsConstruct)
+			return &j
+		},
+	)
+	_jsii_.RegisterClass(
+		"zap-cdk.ReportConfig",
+		reflect.TypeOf((*ReportConfig)(nil)).Elem(),
+		[]_jsii_.Member{
+			_jsii_.MemberProperty{JsiiProperty: "config", GoGetter: "Config"},
+			_jsii_.MemberProperty{JsiiProperty: "node", GoGetter: "Node"},
+			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
+			_jsii_.MemberMethod{JsiiMethod: "toYaml", GoMethod: "ToYaml"},
+		},
+		func() interface{} {
+			j := jsiiProxy_ReportConfig{}
+			_jsii_.InitJsiiProxy(&j.Type__constructsConstruct)
+			return &j
+		},
+	)
+	_jsii_.RegisterClass(
+		"zap-cdk.RequestorConfig",
+		reflect.TypeOf((*RequestorConfig)(nil)).Elem(),
+		[]_jsii_.Member{
+			_jsii_.MemberProperty{JsiiProperty: "config", GoGetter: "Config"},
+			_jsii_.MemberProperty{JsiiProperty: "node", GoGetter: "Node"},
+			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
+			_jsii_.MemberMethod{JsiiMethod: "toYaml", GoMethod: "ToYaml"},
+		},
+		func() interface{} {
+			j := jsiiProxy_RequestorConfig{}
+			_jsii_.InitJsiiProxy(&j.Type__constructsConstruct)
+			return &j
+		},
+	)
+	_jsii_.RegisterClass(
+		"zap-cdk.SOAPConfig",
+		reflect.TypeOf((*SOAPConfig)(nil)).Elem(),
+		[]_jsii_.Member{
+			_jsii_.MemberProperty{JsiiProperty: "config", GoGetter: "Config"},
+			_jsii_.MemberProperty{JsiiProperty: "node", GoGetter: "Node"},
+			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
+			_jsii_.MemberMethod{JsiiMethod: "toYaml", GoMethod: "ToYaml"},
+		},
+		func() interface{} {
+			j := jsiiProxy_SOAPConfig{}
+			_jsii_.InitJsiiProxy(&j.Type__constructsConstruct)
+			return &j
+		},
+	)
+	_jsii_.RegisterClass(
+		"zap-cdk.SpiderAjaxConfig",
+		reflect.TypeOf((*SpiderAjaxConfig)(nil)).Elem(),
+		[]_jsii_.Member{
+			_jsii_.MemberProperty{JsiiProperty: "config", GoGetter: "Config"},
+			_jsii_.MemberProperty{JsiiProperty: "node", GoGetter: "Node"},
+			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
+			_jsii_.MemberMethod{JsiiMethod: "toYaml", GoMethod: "ToYaml"},
+		},
+		func() interface{} {
+			j := jsiiProxy_SpiderAjaxConfig{}
+			_jsii_.InitJsiiProxy(&j.Type__constructsConstruct)
+			return &j
+		},
+	)
+	_jsii_.RegisterClass(
+		"zap-cdk.SpiderConfig",
+		reflect.TypeOf((*SpiderConfig)(nil)).Elem(),
+		[]_jsii_.Member{
+			_jsii_.MemberProperty{JsiiProperty: "config", GoGetter: "Config"},
+			_jsii_.MemberProperty{JsiiProperty: "node", GoGetter: "Node"},
+			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
+			_jsii_.MemberMethod{JsiiMethod: "toYaml", GoMethod: "ToYaml"},
+		},
+		func() interface{} {
+			j := jsiiProxy_SpiderConfig{}
+			_jsii_.InitJsiiProxy(&j.Type__constructsConstruct)
+			return &j
+		},
+	)
 	_jsii_.RegisterStruct(
 		"zap-cdk.SpiderProps",
 		reflect.TypeOf((*SpiderProps)(nil)).Elem(),
+	)
+	_jsii_.RegisterClass(
+		"zap-cdk.ZapConfig",
+		reflect.TypeOf((*ZapConfig)(nil)).Elem(),
+		[]_jsii_.Member{
+			_jsii_.MemberProperty{JsiiProperty: "config", GoGetter: "Config"},
+			_jsii_.MemberProperty{JsiiProperty: "node", GoGetter: "Node"},
+			_jsii_.MemberMethod{JsiiMethod: "synth", GoMethod: "Synth"},
+			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
+			_jsii_.MemberMethod{JsiiMethod: "toYaml", GoMethod: "ToYaml"},
+		},
+		func() interface{} {
+			j := jsiiProxy_ZapConfig{}
+			_jsii_.InitJsiiProxy(&j.Type__constructsConstruct)
+			return &j
+		},
 	)
 }
