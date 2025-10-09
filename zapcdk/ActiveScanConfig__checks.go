@@ -4,19 +4,9 @@ package zapcdk
 
 import (
 	"fmt"
-
-	"github.com/aws/constructs-go/constructs/v10"
 )
 
-func validateActiveScanConfig_IsConstructParameters(x interface{}) error {
-	if x == nil {
-		return fmt.Errorf("parameter x is required, but nil was provided")
-	}
-
-	return nil
-}
-
-func (j *jsiiProxy_ActiveScanConfig) validateSetConfigParameters(val IActiveScanConfig) error {
+func (j *jsiiProxy_ActiveScanConfig) validateSetParametersParameters(val IActiveScanConfigParameters) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -24,17 +14,17 @@ func (j *jsiiProxy_ActiveScanConfig) validateSetConfigParameters(val IActiveScan
 	return nil
 }
 
-func validateNewActiveScanConfigParameters(scope constructs.Construct, id *string, props IActiveScanConfigProps) error {
-	if scope == nil {
-		return fmt.Errorf("parameter scope is required, but nil was provided")
+func (j *jsiiProxy_ActiveScanConfig) validateSetTypeParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
 
-	if id == nil {
-		return fmt.Errorf("parameter id is required, but nil was provided")
-	}
+	return nil
+}
 
-	if props == nil {
-		return fmt.Errorf("parameter props is required, but nil was provided")
+func validateNewActiveScanConfigParameters(options IActiveScanConfig) error {
+	if options == nil {
+		return fmt.Errorf("parameter options is required, but nil was provided")
 	}
 
 	return nil

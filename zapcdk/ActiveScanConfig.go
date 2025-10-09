@@ -3,47 +3,83 @@ package zapcdk
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
 	_init_ "github.com/kesi03/zap-cdk-go/zapcdk/jsii"
-
-	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/kesi03/zap-cdk-go/zapcdk/internal"
 )
 
-// Class representing the active scan configuration.
+// Class representing the configuration for an active scan.
+//
+// Example:
+//   const activeScanConfig = new ActiveScanConfig({
+//     parameters: new ActiveScanConfigParameters(),
+//     excludePaths: ['^/api/health$', '^/static/.*$'],
+//     enabled: true,
+//     alwaysRun: false
+//   });
+//   console.log(activeScanConfig.type); // 'activeScan-config'
+//
 type ActiveScanConfig interface {
-	constructs.Construct
-	// The active scan configuration properties.
-	Config() IActiveScanConfig
-	SetConfig(val IActiveScanConfig)
-	// The tree node.
-	Node() constructs.Node
-	// Returns a string representation of this construct.
-	ToString() *string
-	// Converts the active scan configuration to YAML format.
-	//
-	// Returns: The active scan configuration in YAML format.
-	ToYaml() IActiveScanConfig
+	IActiveScanConfig
+	AlwaysRun() *bool
+	SetAlwaysRun(val *bool)
+	Enabled() *bool
+	SetEnabled(val *bool)
+	ExcludePaths() *[]*string
+	SetExcludePaths(val *[]*string)
+	Parameters() IActiveScanConfigParameters
+	SetParameters(val IActiveScanConfigParameters)
+	Type() *string
+	SetType(val *string)
 }
 
 // The jsii proxy struct for ActiveScanConfig
 type jsiiProxy_ActiveScanConfig struct {
-	internal.Type__constructsConstruct
+	jsiiProxy_IActiveScanConfig
 }
 
-func (j *jsiiProxy_ActiveScanConfig) Config() IActiveScanConfig {
-	var returns IActiveScanConfig
+func (j *jsiiProxy_ActiveScanConfig) AlwaysRun() *bool {
+	var returns *bool
 	_jsii_.Get(
 		j,
-		"config",
+		"alwaysRun",
 		&returns,
 	)
 	return returns
 }
 
-func (j *jsiiProxy_ActiveScanConfig) Node() constructs.Node {
-	var returns constructs.Node
+func (j *jsiiProxy_ActiveScanConfig) Enabled() *bool {
+	var returns *bool
 	_jsii_.Get(
 		j,
-		"node",
+		"enabled",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ActiveScanConfig) ExcludePaths() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"excludePaths",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ActiveScanConfig) Parameters() IActiveScanConfigParameters {
+	var returns IActiveScanConfigParameters
+	_jsii_.Get(
+		j,
+		"parameters",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ActiveScanConfig) Type() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"type",
 		&returns,
 	)
 	return returns
@@ -51,17 +87,27 @@ func (j *jsiiProxy_ActiveScanConfig) Node() constructs.Node {
 
 
 // Creates an instance of ActiveScanConfig.
-func NewActiveScanConfig(scope constructs.Construct, id *string, props IActiveScanConfigProps) ActiveScanConfig {
+//
+// Example:
+//   const activeScanConfig = new ActiveScanConfig({
+//     parameters: new ActiveScanConfigParameters(),
+//     excludePaths: ['^/api/health$', '^/static/.*$'],
+//     enabled: true,
+//     alwaysRun: false
+//   });
+//   console.log(activeScanConfig.type); // 'activeScan-config'
+//
+func NewActiveScanConfig(options IActiveScanConfig) ActiveScanConfig {
 	_init_.Initialize()
 
-	if err := validateNewActiveScanConfigParameters(scope, id, props); err != nil {
+	if err := validateNewActiveScanConfigParameters(options); err != nil {
 		panic(err)
 	}
 	j := jsiiProxy_ActiveScanConfig{}
 
 	_jsii_.Create(
 		"zap-cdk.ActiveScanConfig",
-		[]interface{}{scope, id, props},
+		[]interface{}{options},
 		&j,
 	)
 
@@ -69,72 +115,69 @@ func NewActiveScanConfig(scope constructs.Construct, id *string, props IActiveSc
 }
 
 // Creates an instance of ActiveScanConfig.
-func NewActiveScanConfig_Override(a ActiveScanConfig, scope constructs.Construct, id *string, props IActiveScanConfigProps) {
+//
+// Example:
+//   const activeScanConfig = new ActiveScanConfig({
+//     parameters: new ActiveScanConfigParameters(),
+//     excludePaths: ['^/api/health$', '^/static/.*$'],
+//     enabled: true,
+//     alwaysRun: false
+//   });
+//   console.log(activeScanConfig.type); // 'activeScan-config'
+//
+func NewActiveScanConfig_Override(a ActiveScanConfig, options IActiveScanConfig) {
 	_init_.Initialize()
 
 	_jsii_.Create(
 		"zap-cdk.ActiveScanConfig",
-		[]interface{}{scope, id, props},
+		[]interface{}{options},
 		a,
 	)
 }
 
-func (j *jsiiProxy_ActiveScanConfig)SetConfig(val IActiveScanConfig) {
-	if err := j.validateSetConfigParameters(val); err != nil {
-		panic(err)
-	}
+func (j *jsiiProxy_ActiveScanConfig)SetAlwaysRun(val *bool) {
 	_jsii_.Set(
 		j,
-		"config",
+		"alwaysRun",
 		val,
 	)
 }
 
-// Checks if `x` is a construct.
-//
-// Returns: true if `x` is an object created from a class which extends `Construct`.
-// Deprecated: use `x instanceof Construct` instead.
-func ActiveScanConfig_IsConstruct(x interface{}) *bool {
-	_init_.Initialize()
+func (j *jsiiProxy_ActiveScanConfig)SetEnabled(val *bool) {
+	_jsii_.Set(
+		j,
+		"enabled",
+		val,
+	)
+}
 
-	if err := validateActiveScanConfig_IsConstructParameters(x); err != nil {
+func (j *jsiiProxy_ActiveScanConfig)SetExcludePaths(val *[]*string) {
+	_jsii_.Set(
+		j,
+		"excludePaths",
+		val,
+	)
+}
+
+func (j *jsiiProxy_ActiveScanConfig)SetParameters(val IActiveScanConfigParameters) {
+	if err := j.validateSetParametersParameters(val); err != nil {
 		panic(err)
 	}
-	var returns *bool
-
-	_jsii_.StaticInvoke(
-		"zap-cdk.ActiveScanConfig",
-		"isConstruct",
-		[]interface{}{x},
-		&returns,
+	_jsii_.Set(
+		j,
+		"parameters",
+		val,
 	)
-
-	return returns
 }
 
-func (a *jsiiProxy_ActiveScanConfig) ToString() *string {
-	var returns *string
-
-	_jsii_.Invoke(
-		a,
-		"toString",
-		nil, // no parameters
-		&returns,
+func (j *jsiiProxy_ActiveScanConfig)SetType(val *string) {
+	if err := j.validateSetTypeParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"type",
+		val,
 	)
-
-	return returns
-}
-
-func (a *jsiiProxy_ActiveScanConfig) ToYaml() IActiveScanConfig {
-	var returns IActiveScanConfig
-
-	_jsii_.Invoke(
-		a,
-		"toYaml",
-		nil, // no parameters
-		&returns,
-	)
-
-	return returns
 }
 

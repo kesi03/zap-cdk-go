@@ -3,46 +3,91 @@ package zapcdk
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
 	_init_ "github.com/kesi03/zap-cdk-go/zapcdk/jsii"
-
-	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/kesi03/zap-cdk-go/zapcdk/internal"
 )
 
 // Class representing the passive scan configuration.
+//
+// Example:
+//   const passiveScanConfig = new PassiveScanConfig({
+//     parameters: {
+//       maxAlertsPerRule: 5,
+//       scanOnlyInScope: true,
+//       maxBodySizeInBytesToScan: 0,
+//       enableTags: false,
+//       disableAllRules: true
+//     },
+//     rules: [
+//       { id: 10010, name: 'Cross-Domain Misconfiguration', threshold: 'Medium' },
+//       { id: 10011, name: 'CSP Header Not Set', threshold: 'High' }
+//     ],
+//     enabled: true,
+//     alwaysRun: false
+//   });
+//
 type PassiveScanConfig interface {
-	constructs.Construct
-	Config() IPassiveScanConfig
-	SetConfig(val IPassiveScanConfig)
-	// The tree node.
-	Node() constructs.Node
-	// Returns a string representation of this construct.
-	ToString() *string
-	// Converts the passive scan configuration to YAML format.
-	//
-	// Returns: The passive scan configuration in YAML format.
-	ToYaml() IPassiveScanConfig
+	IPassiveScanConfig
+	AlwaysRun() *bool
+	SetAlwaysRun(val *bool)
+	Enabled() *bool
+	SetEnabled(val *bool)
+	Parameters() IPassiveScanParameters
+	SetParameters(val IPassiveScanParameters)
+	Rules() *[]IPassiveScanRule
+	SetRules(val *[]IPassiveScanRule)
+	Type() *string
+	SetType(val *string)
 }
 
 // The jsii proxy struct for PassiveScanConfig
 type jsiiProxy_PassiveScanConfig struct {
-	internal.Type__constructsConstruct
+	jsiiProxy_IPassiveScanConfig
 }
 
-func (j *jsiiProxy_PassiveScanConfig) Config() IPassiveScanConfig {
-	var returns IPassiveScanConfig
+func (j *jsiiProxy_PassiveScanConfig) AlwaysRun() *bool {
+	var returns *bool
 	_jsii_.Get(
 		j,
-		"config",
+		"alwaysRun",
 		&returns,
 	)
 	return returns
 }
 
-func (j *jsiiProxy_PassiveScanConfig) Node() constructs.Node {
-	var returns constructs.Node
+func (j *jsiiProxy_PassiveScanConfig) Enabled() *bool {
+	var returns *bool
 	_jsii_.Get(
 		j,
-		"node",
+		"enabled",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_PassiveScanConfig) Parameters() IPassiveScanParameters {
+	var returns IPassiveScanParameters
+	_jsii_.Get(
+		j,
+		"parameters",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_PassiveScanConfig) Rules() *[]IPassiveScanRule {
+	var returns *[]IPassiveScanRule
+	_jsii_.Get(
+		j,
+		"rules",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_PassiveScanConfig) Type() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"type",
 		&returns,
 	)
 	return returns
@@ -50,17 +95,17 @@ func (j *jsiiProxy_PassiveScanConfig) Node() constructs.Node {
 
 
 // Creates an instance of PassiveScanConfig.
-func NewPassiveScanConfig(scope constructs.Construct, id *string, props IPassiveScanConfigProps) PassiveScanConfig {
+func NewPassiveScanConfig(options IPassiveScanConfig) PassiveScanConfig {
 	_init_.Initialize()
 
-	if err := validateNewPassiveScanConfigParameters(scope, id, props); err != nil {
+	if err := validateNewPassiveScanConfigParameters(options); err != nil {
 		panic(err)
 	}
 	j := jsiiProxy_PassiveScanConfig{}
 
 	_jsii_.Create(
 		"zap-cdk.PassiveScanConfig",
-		[]interface{}{scope, id, props},
+		[]interface{}{options},
 		&j,
 	)
 
@@ -68,72 +113,59 @@ func NewPassiveScanConfig(scope constructs.Construct, id *string, props IPassive
 }
 
 // Creates an instance of PassiveScanConfig.
-func NewPassiveScanConfig_Override(p PassiveScanConfig, scope constructs.Construct, id *string, props IPassiveScanConfigProps) {
+func NewPassiveScanConfig_Override(p PassiveScanConfig, options IPassiveScanConfig) {
 	_init_.Initialize()
 
 	_jsii_.Create(
 		"zap-cdk.PassiveScanConfig",
-		[]interface{}{scope, id, props},
+		[]interface{}{options},
 		p,
 	)
 }
 
-func (j *jsiiProxy_PassiveScanConfig)SetConfig(val IPassiveScanConfig) {
-	if err := j.validateSetConfigParameters(val); err != nil {
-		panic(err)
-	}
+func (j *jsiiProxy_PassiveScanConfig)SetAlwaysRun(val *bool) {
 	_jsii_.Set(
 		j,
-		"config",
+		"alwaysRun",
 		val,
 	)
 }
 
-// Checks if `x` is a construct.
-//
-// Returns: true if `x` is an object created from a class which extends `Construct`.
-// Deprecated: use `x instanceof Construct` instead.
-func PassiveScanConfig_IsConstruct(x interface{}) *bool {
-	_init_.Initialize()
+func (j *jsiiProxy_PassiveScanConfig)SetEnabled(val *bool) {
+	_jsii_.Set(
+		j,
+		"enabled",
+		val,
+	)
+}
 
-	if err := validatePassiveScanConfig_IsConstructParameters(x); err != nil {
+func (j *jsiiProxy_PassiveScanConfig)SetParameters(val IPassiveScanParameters) {
+	if err := j.validateSetParametersParameters(val); err != nil {
 		panic(err)
 	}
-	var returns *bool
-
-	_jsii_.StaticInvoke(
-		"zap-cdk.PassiveScanConfig",
-		"isConstruct",
-		[]interface{}{x},
-		&returns,
+	_jsii_.Set(
+		j,
+		"parameters",
+		val,
 	)
-
-	return returns
 }
 
-func (p *jsiiProxy_PassiveScanConfig) ToString() *string {
-	var returns *string
-
-	_jsii_.Invoke(
-		p,
-		"toString",
-		nil, // no parameters
-		&returns,
+func (j *jsiiProxy_PassiveScanConfig)SetRules(val *[]IPassiveScanRule) {
+	_jsii_.Set(
+		j,
+		"rules",
+		val,
 	)
-
-	return returns
 }
 
-func (p *jsiiProxy_PassiveScanConfig) ToYaml() IPassiveScanConfig {
-	var returns IPassiveScanConfig
-
-	_jsii_.Invoke(
-		p,
-		"toYaml",
-		nil, // no parameters
-		&returns,
+func (j *jsiiProxy_PassiveScanConfig)SetType(val *string) {
+	if err := j.validateSetTypeParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"type",
+		val,
 	)
-
-	return returns
 }
 

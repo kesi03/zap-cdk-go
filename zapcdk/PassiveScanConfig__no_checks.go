@@ -4,15 +4,15 @@ package zapcdk
 
 // Building without runtime type checking enabled, so all the below just return nil
 
-func validatePassiveScanConfig_IsConstructParameters(x interface{}) error {
+func (j *jsiiProxy_PassiveScanConfig) validateSetParametersParameters(val IPassiveScanParameters) error {
 	return nil
 }
 
-func (j *jsiiProxy_PassiveScanConfig) validateSetConfigParameters(val IPassiveScanConfig) error {
+func (j *jsiiProxy_PassiveScanConfig) validateSetTypeParameters(val *string) error {
 	return nil
 }
 
-func validateNewPassiveScanConfigParameters(scope constructs.Construct, id *string, props IPassiveScanConfigProps) error {
+func validateNewPassiveScanConfigParameters(options IPassiveScanConfig) error {
 	return nil
 }
 
